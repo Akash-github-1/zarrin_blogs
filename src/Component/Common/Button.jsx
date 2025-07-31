@@ -5,7 +5,7 @@ const Button = ({ text, variant, className }) => {
   const variants = {
     primary: 'bg-primary text-tertiary border-transparent',
     dark: 'bg-dark text-tertiary ',
-    outline: 'bg-tertiary text-dark border-dark ',
+    outline: 'bg-tertiary text-dark border-primary ',
     read: 'bg-tertiary text-primary border-transparent font-base font-bold',
   };
 

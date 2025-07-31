@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        font1: ['Raleway'],
-        font2: ['Roboto'],
+        font1: 'Raleway',
+        font2: 'Roboto',
       },
       colors: {
         primary: '#7C4EE4',
@@ -17,19 +17,24 @@ module.exports = {
         tertiary: '#FFFFFF',
         secondaryGray: '#999999',
       },
-    
-        fontSize: {
-        heading1: ['4rem', { lineHeight: '1.2' }],         // 64px
-        heading2: ['3.25rem', { lineHeight: '1.2' }],      // 52px
-        heading3: ['3rem', { lineHeight: '1.2' }],         // 48px
-        heading4: ['2rem', { lineHeight: '1.3' }],         // 32px
-        heading5: ['1.625rem', { lineHeight: '1.4' }],     // 26px
-        heading6: ['1.5rem', { lineHeight: '1.4' }],       // 24px
+      lineHeight: {
+        custom-para: '24px',
+        custom-heading: '32px',
+        custom-heading-xl: '45px',
+        custom-heading-xxl: '84px',
       },
-        'paragraph-big': ['1.125rem', { lineHeight: '1.5rem' }],
-        'paragraph-small': ['1rem', { lineHeight: '1.5rem' }],
-      },
+      fontSize: {
+        "custom-2xl":"86px",
+        'custom-xl': "6xl",
+        'custom-lg':"5xl",
+        "custom-md":"3xl",
+        "custom-sm":"2xl",
+        "custom-xs":"base",
+
+        
+      }
     },
-    plugins: [],
-  }
+  },
+  plugins: [],
+}
 
