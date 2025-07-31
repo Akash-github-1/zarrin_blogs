@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const Paragraph = ({ children, variant = 'small', className = '' }) => {
   const variants = {
-    'big': 'text-paragraph-big',
-    'small': 'text-paragraph-small',
+    'big': 'text-lg ',
+    'small': 'text-base',
   };
 
   return (
