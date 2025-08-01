@@ -1,9 +1,10 @@
 import React from 'react'
  import { NavLink } from 'react-router-dom';
-import Image from './Common/Image'; 
-import Heading from './Common/Heading';
-import Button from './Common/Button';
+import Image from '../Common/Image'; 
+import Heading from '../Common/Heading';
+
 import { Search } from 'lucide-react';
+import Button from '../Common/Button';
 
 
 const Navbar = () => {

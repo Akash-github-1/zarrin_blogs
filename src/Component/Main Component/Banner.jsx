@@ -1,11 +1,11 @@
 import React from 'react'
-import Image from './Common/Image'
-import Paragraph from './Common/Paragraph'  
-import Headings from './Common/Heading'
-import Button from './Common/Button'
+import Image from '../Common/Image'
+import Paragraph from '../Common/Paragraph'  
+import Headings from '../Common/Heading'
+import Button from '../Common/Button'
 
 
-const Body = () => {
+const Banner = () => {
   return (
     <div className='relative'>
         <div className='bg-tertiary w-full px-36 py-36'>
@@ -28,4 +28,4 @@ const Body = () => {
   )
 }
 
-export default Body
+export default Banner

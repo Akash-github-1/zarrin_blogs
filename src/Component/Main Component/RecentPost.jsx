@@ -1,11 +1,40 @@
 import React from 'react'
-import Image from './Common/Image'
-import Headings from './Common/Heading'
-import Button from './Common/Button'
-import Paragraph from './Common/Paragraph'
-import Cards from './Common/Cards'
+import Image from '../Common/Image'
+import Headings from '../Common/Heading'
+import Button from '../Common/Button'
+import Paragraph from '../Common/Paragraph'
+import Cards from '../Common/Cards'
 
+const CardsData = [        
+  {
+        imageSrc:"/Assets/beach.png",
+        imageAlt:"Scenic Beach",
+        headingSmall:"Travel  14 March 2023",
+        headingLarge:"8 Rules of Travelling In Sea You Need To Know",
+        paragraph:"Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs ",
+        buttonText:"Read More..",
+        buttonVariant:"read",
+  },
 
+      {
+        imageSrc:"/Assets/tv.png",
+        imageAlt:"Scenic Beach",
+        headingSmall:"Deployment  23 march 2025",
+        headingLarge:"How to build strong portfolio and get a Job in UI/UX",
+        paragraph:"Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from .",
+        buttonText:"Read More..",
+        buttonVariant:"read",
+      },
+      {
+        imageSrc:"/Assets/football.png",
+        imageAlt:"Scenic Beach",
+        headingSmall:"Sports  27 March 2025",
+        headingLarge:"How to Be a Professional Footballer in 2023",
+        paragraph:"Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. survival strategies to ensure proactive.",
+        buttonText:"Read More..",
+        buttonVariant:"read",
+      },
+]
 const RecentPost = () => {
   return (
     <div className='m-16'>
@@ -33,37 +62,9 @@ const RecentPost = () => {
             </div> 
         </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
-    
-      <Cards
-        imageSrc="/Assets/beach.png"
-        imageAlt="Scenic Beach"
-        headingSmall="Travel  14 March 2023"
-        headingLarge="8 Rules of Travelling In Sea You Need To Know"
-        paragraph="Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs "
-        buttonText="Read More.."
-        buttonVariant="read"
-      />
-
-      <Cards
-        imageSrc="\Assets\tv.png"
-        imageAlt="Scenic Beach"
-        headingSmall="Deployment  23 march 2025"
-        headingLarge="How to build strong portfolio and get a Job in UI/UX"
-        paragraph="Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from ."
-        buttonText="Read More.."
-        buttonVariant="read"
-      />
-      <Cards
-        imageSrc="\Assets\football.png"
-        imageAlt="Scenic Beach"
-        headingSmall="Sports  27 March 2025"
-        headingLarge="How to Be a Professional Footballer in 2023"
-        paragraph="Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. survival strategies to ensure proactive."
-        buttonText="Read More.."
-        buttonVariant="read"
-      />
-      
-
+      {CardsData.map((card, index) => (
+          <Cards key={index} {...card} />
+        ))}
       </div>
     </div>
   )

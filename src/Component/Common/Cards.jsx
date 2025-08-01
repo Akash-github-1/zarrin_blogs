@@ -25,10 +25,10 @@ const Cards = ({
       </div>
 
     
-      <div className="flex flex-col justify-between w-26 h-16 flex-1 px-0 py-1  space-y-2">
+      <div className="flex flex-col justify-between w-26 h-16 flex-1  py-1  space-y-2">
 
       
-        <Heading type="h6" className="text-xs opacity-65 leading-5 font-bold text-black w-40 mx-0">
+        <Heading type="h6" className="text-xs opacity-65 leading-5 font-bold text-black w-40 ">
           {headingSmall}
         </Heading>
 
@@ -49,7 +49,7 @@ const Cards = ({
             <Button
               text={buttonText}
               variant={buttonVariant}
-              className="text-xs px-2 underline py-0 rounded-full font-font1"
+              className="text-xs px-2 underline  rounded-full font-font1"
             />
           )}
         </div>
