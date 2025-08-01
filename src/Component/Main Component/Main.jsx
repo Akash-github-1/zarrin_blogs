@@ -1,11 +1,11 @@
 import React from 'react'
-import Heading from './Common/Heading'
-import Paragraph from './Common/Paragraph'
-import Button from './Common/Button'
-import Image from './Common/Image' 
+import Heading from '../Common/Heading'
+import Paragraph from '../Common/Paragraph'
+import Button from '../Common/Button'
+import Image from '../Common/Image' 
 
 
-const Header = () => {
+const AI = () => {
   return (
     
         <div className=" h-custom-2xl bg-primary flex items-start pt-36  justify-between  px-20 text-tertiary relative overflow-hidden">
@@ -34,4 +34,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default AI
