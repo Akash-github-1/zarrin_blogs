@@ -10,6 +10,12 @@ module.exports = {
         font1: 'Raleway,sans-serif',
         font2: 'Roboto , sans-serif',
       },
+      width:{
+        'custom':'1232px',
+      },
+      height:{
+        'custom-x':'576px',
+      },
       colors: {
         primary: '#7C4EE4',
         dark: '#333333',

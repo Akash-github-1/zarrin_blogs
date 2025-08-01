@@ -4,7 +4,6 @@ import Button from './Component/Common/Button.jsx';
 import Paragraph from './Component/Common/Paragraph.jsx';
 import Heading from './Component/Common/Heading.jsx';
 import Image from './Component/Common/Image.jsx'; 
-import Card from './Component/Common/Reusablediv.jsx';
 import Navbar from './Component/Navbar.jsx';
 import Header from './Component/Header.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -12,6 +11,9 @@ import Blog from './Component/Pages/Blog.jsx';
 import About from './Component/Pages/About.jsx';
 import Contact from './Component/Pages/Contact.jsx';
 import Home from './Component/Pages/Home.jsx';
+import Body from './Component/Body.jsx';
+import RecentPost from './Component/RecentPost.jsx';
+
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Header/>
+      <Body/>
+      <RecentPost/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Blog" element={<Blog />} />
