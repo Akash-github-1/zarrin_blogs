@@ -5,6 +5,7 @@ import Button from '../Common/Button'
 import Paragraph from '../Common/Paragraph'
 import Cards from '../Common/Cards'
 
+
 const CardsData = [        
   {
         imageSrc:"/Assets/beach.png",
@@ -42,7 +43,7 @@ const RecentPost = () => {
             <Headings type='h3'>Our Recent Post</Headings>
             <Button text="Contact Us" variant="primary" className="px-6 py-2 rounded-md" />
         </div>
-        <div className='flex m-16 gap-16'>
+        <div className='flex my-16 gap-16'>
           <div className=''>
               <Image src={'./Assets/man.png'} className=" h-96 max-w-2xl" />
           </div>
