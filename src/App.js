@@ -4,25 +4,28 @@ import Button from './Component/Common/Button.jsx';
 import Paragraph from './Component/Common/Paragraph.jsx';
 import Heading from './Component/Common/Heading.jsx';
 import Image from './Component/Common/Image.jsx'; 
-import Navbar from './Component/Main Component/Navbar.jsx';
-
+import Cards from './Component/Common/Cards.jsx';
+import Navbar from './Component/Navbar.jsx';
+import Header from './Component/Header.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Blog from './Component/Pages/Blog.jsx';
 import About from './Component/Pages/About.jsx';
 import Contact from './Component/Pages/Contact.jsx';
 import Home from './Component/Pages/Home.jsx';
-
-
-
-
+import Footer from './Component/Common/Footer.jsx';
+import Layout from './Component/Pages/Layout1.jsx'
+import UserContact from './Component/Common/Usercontact.jsx';
+// import  Layout from 
 
 function App() {
   return (
     <>
     <BrowserRouter>
       <Navbar />
-      
-    
+      <Header/>
+      <Layout/>
+      <UserContact/>
+      <Footer/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Blog" element={<Blog />} />
