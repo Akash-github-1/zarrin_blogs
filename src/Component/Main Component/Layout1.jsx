@@ -64,7 +64,7 @@ const cardsData = [
 
 const BlogSection = () => {
   return (
-    <div className='w-full py-12'>
+    <div className='m-16 '>
       <div className="flex justify-between px-6 py-2">
         <Heading type='h4' className='font-bold'>
           Popular Post

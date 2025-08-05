@@ -1,7 +1,4 @@
-
-import { Heading, Heading1, Heading5 } from "lucide-react";
- import { Link } from 'react-router-dom';
-import React from "react";
+ import { NavLink } from 'react-router-dom';
 import {
   FaFacebookF,FaInstagram,FaLinkedinIn, FaYoutube,
 } from "react-icons/fa";
@@ -19,45 +16,34 @@ const Footer = () => {
           <h1 className="text-2xl font-bold text-black">Zarrin</h1>
           </div>
           <nav className="space-x-6 text-sm font-font1 text-secoinadry-700">
-          <a href="#" className="hover:text-primary">
-            Home
-          </a>
-          <a href="#" className="hover:text-primary">
-            Blog
-          </a>
-          <a href="#" className="hover:text-primary">
-            About
-          </a>
-          <a href="#" className="hover:text-primary font-font1">
-            Contact Us
-          </a>
+          <NavLink to="/" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-dark"}>Home</NavLink>
+          
+          <NavLink to="/Blog" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-dark"}>Blog</NavLink>
+          <NavLink to="/About" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-dark"}>About</NavLink>
+          <NavLink to="/Contact" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-dark"}>Contact us</NavLink>
          
         </nav>
-        <div className="flex space-x-4 mt-4">
-          <a
-            href="#"
-              className="bg-primary text-tertiary p-2 rounded-full hover:bg-dark"
-            >
+        <div className="flex space-x-4 mt-4" >
+          <NavLink to="https://www.facebook.com" className={({ isActive }) => isActive ? "text-primary font-bold" : "bg-primary text-tertiary p-2 rounded-full hover:bg-dark"} >
+          
             <FaFacebookF size={16} />
-          </a>
-          <a
-            href="#"
-            className="bg-primary text-tertiary p-2 rounded-full hover:bg-dark"
-            >
+          
+          </NavLink>
+          <NavLink to="https://www.instagram.com" className={({ isActive }) => isActive ? "text-primary font-bold" : "bg-primary text-tertiary p-2 rounded-full hover:bg-dark"} >
+          
             <FaInstagram size={16} />
-          </a>
-          <a
-            href="#"
-            className="bg-primary text-tertiary p-2 rounded-full hover:bg-dark"
-          >
+          
+          </NavLink>
+          <NavLink to="https://www.linkedin.com" className={({ isActive }) => isActive ? "text-primary font-bold" : "bg-primary text-tertiary p-2 rounded-full hover:bg-dark"} >
+          
             <FaLinkedinIn size={16} />
-          </a>
-          <a
-            href="#"
-            className="bg-primary text-tertiary p-2 rounded-full hover:bg-dark"
-          >
+          
+          </NavLink>
+          <NavLink to="https://www.youtube.com" className={({ isActive }) => isActive ? "text-primary font-bold" : "bg-primary text-tertiary p-2 rounded-full hover:bg-dark"} >
+          
             <FaYoutube size={16} />
-          </a>
+          
+          </NavLink>
         </div>
       </div>
 

@@ -12,13 +12,17 @@ const Navbar = () => {
     <div className="bg-tertiary top-0">
       <div className=" flex justify-between items-center mx-10  py-6 p-4">
 
+      <NavLink to="/" >
       <div className="flex items-center gap-2">
+        
         
         <Image src="/Assets/logo.png" alt="Zarrin Logo" className="w-10 h-10" />
         
         <Heading type='h4'>Zarrin</Heading>
         <Image src={"./Assets/Mask group.png"} className='z-20 absolute top-0 left-0'/>
       </div>
+        </NavLink>
+      
        
       
 
