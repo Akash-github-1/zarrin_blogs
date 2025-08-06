@@ -1,12 +1,11 @@
+import React from 'react'
+import Headings from '../Common/Heading'
+import Paragraph from '../Common/Paragraph'
+import Cards from '../Common/Cards'
 
-import React from 'react';
-import Cards from '../Common/Cards';
-import Button from '../Common/Button';
-import Heading from '../Common/Heading';
-
-
-const cardsData = [
-  {
+const OurBlogs = () => {
+  const CardsData = [
+    {
     imageSrc: '/Assets/train.png',
     imageAlt: 'Train Journey',
     headingSmall: 'Travel-14 March 2023',
@@ -60,29 +59,55 @@ const cardsData = [
     buttonText: 'Read More..',
     buttonVariant: 'read',
   },
-];
+    {
+      imageSrc: "/Assets/beach.png",
+      imageAlt: "Scenic Beach",
+      headingSmall: "Travel  14 March 2023",
+      headingLarge: "8 Rules of Travelling In Sea You Need To Know",
+      paragraph: "Travelling in sea has many advantages. Some of the advantages of transporting goods by sea include: you can ship large volumes at costs ",
+      buttonText: "Read More..",
+      buttonVariant: "read",
+    },
+    {
+      imageSrc: "/Assets/tv.png",
+      imageAlt: "TV Show",
+      headingSmall: "Deployment  23 March 2025",
+      headingLarge: "How to build strong portfolio and get a Job in UI/UX",
+      paragraph: "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from.",
+      buttonText: "Read More..",
+      buttonVariant: "read",
+    },
+    {
+      imageSrc: "/Assets/football.png",
+      imageAlt: "Football Game",
+      headingSmall: "Sports  27 March 2025",
+      headingLarge: "How to Be a Professional Footballer in 2023",
+      paragraph: "Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. survival strategies to ensure proactive.",
+      buttonText: "Read More..",
+      buttonVariant: "read",
+    },
+  ];
 
-const BlogSection = () => {
   return (
     <div className='px-4 md:px-16 py-12'>
-      <div className="flex justify-between py-2">
-        <Heading type='h4' className='font-bold'>
-          Popular Post
-        </Heading>
-
-        <Button
-          text="View All"
-          variant="primary"
-          className="mb-10 hover:bg-secondaryGray"
-        />
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {cardsData.map((card, index) => (
-          <Cards key={index} {...card} />
-        ))}
+      <div className='bg-tertiary justify-center'>
+        <div className='py-4'>
+          <Headings type='h6' className='text-center opacity-65'>OUR BLOGS</Headings>
+          <Headings type='h2' className='text-center py-4'>Find our all blogs from here</Headings>
+          <div className='flex justify-center'>
+            <Paragraph variant='small' className='text-center py-4 opacity-65 max-w-xl'>
+              our blogs are written from very research research and well known writers writers so that we can provide you the best blogs and articles articles for you to read them all along
+            </Paragraph>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-10">
+            {CardsData.map((card, index) => (
+              <Cards key={index} {...card} />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BlogSection;
+export default OurBlogs;
