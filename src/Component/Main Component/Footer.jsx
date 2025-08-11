@@ -2,6 +2,9 @@
 import {
   FaFacebookF,FaInstagram,FaLinkedinIn, FaYoutube,
 } from "react-icons/fa";
+import Logo from '../Common/Logo';
+import Headings from '../Common/Heading';
+import Paragraph from '../Common/Paragraph';
 
 const Footer = () => {
   return (
@@ -9,11 +12,9 @@ const Footer = () => {
       <div className="flex flex-col items-center space-y-4">
         <div className="flex items-center space-x-2">
           <div>
-            <img
-              src="\Assets\logo.png" alt="Zarrin Logo" className="h-10 w-10"
-            />
+            <Logo size="text-3xl" className="text-secondary" />
           </div>
-          <h1 className="text-2xl font-bold text-black">Zarrin</h1>
+          <Headings type='h5' className=" font-bold text-dark">Zarrin</Headings>
           </div>
           <nav className="space-x-6 text-sm font-font1 text-secondary">
           <NavLink to="/" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-dark"}>Home</NavLink>
@@ -49,9 +50,9 @@ const Footer = () => {
 
       <hr className="border-t border-primary my-6 mx-auto w-4/5" />
 
-      <p className="text-xs font-font1 text-secondary -500">
+      <Paragraph className="text-xs  text-secondary -500">
         Copyright Ideapeel Inc © 2023. All Right Reserved
-      </p>
+      </Paragraph>
     </footer>
   );
 };

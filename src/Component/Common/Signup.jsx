@@ -5,6 +5,8 @@ import { FaApple } from 'react-icons/fa';
 import Paragraph from './Paragraph';
 import Button from './Button';
 import Headings from './Heading';
+import Logo from './Logo';
+import { Link } from "react-router-dom";
 const Signup = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-tertiary px-4">
@@ -13,11 +15,7 @@ const Signup = () => {
      
         <div className="flex items-center justify-center gap-2 mb-6">
           <Headings type='h4' className="text-2xl font-bold text-dark font-font1">Zarrrin Blog</Headings>
-          <img
-            src="/Assets/logo.png"
-            alt="Logo"
-            className="h-6 w-auto"
-          />
+          <Logo size="text-3xl" className="text-secondary" />
         </div>
 
         <Headings type='h5' className="text-3xl font-bold text-dark font-font1 mb-6 text-center">
@@ -86,9 +84,10 @@ const Signup = () => {
        
         <Paragraph className="mt-6 text-sm text-center text-secondary">
           Already have an account?{' '}
-          <a href="/login" className="text-primary font-medium hover:underline">
+         
+          <Link to="/login" className="text-primary font-medium hover:underline">
             Sign in
-          </a>
+          </Link>
         </Paragraph>
       </div>
     </div>

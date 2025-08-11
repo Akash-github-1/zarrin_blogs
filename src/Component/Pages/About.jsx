@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutUS from '../Main Component/AboutUS'
-import StepsSection from '../Common/StepsSection'
+
 
 const About = () => {
   return (

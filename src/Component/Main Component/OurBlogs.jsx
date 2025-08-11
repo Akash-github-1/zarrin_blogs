@@ -4,14 +4,14 @@ import { useNavigate } from 'react-router-dom';
 import Headings from '../Common/Heading';
 import Paragraph from '../Common/Paragraph';
 import Cards from '../Common/Cards';
-import BlogSection from './SingleBlog';
+
 
 const OurBlogs= () => {
   const navigate = useNavigate();
 
   const CardsData = [
     {
-      id: 'train',
+      id: '1',
       imageSrc: '/Assets/train.png',
       imageAlt: 'Train Journey',
       headingSmall: 'Travel-14 March 2023',
@@ -22,7 +22,7 @@ const OurBlogs= () => {
       buttonVariant: 'read',
     },
       {
-    id: 'laptop',
+    id: '2',
     imageSrc: '/Assets/laptop.png',
     imageAlt: 'Laptop Workspace',
     headingSmall: 'Deployment-23 March 2025',
@@ -32,7 +32,7 @@ const OurBlogs= () => {
     buttonVariant: 'read',
   },
   {
-    id: 'sport',
+    id: '3',
     imageSrc: '/Assets/sport.png',
     imageAlt: 'Sport and Dance',
     headingSmall: 'Sports 27 March 2025',
@@ -42,7 +42,7 @@ const OurBlogs= () => {
     buttonVariant: 'read',
   },
   {
-    id: 'singer',
+    id: '4',
     imageSrc: '/Assets/singer.png',
     imageAlt: 'Singer Performance',
     headingSmall: 'Travel-27 March 2025',
@@ -52,7 +52,7 @@ const OurBlogs= () => {
     buttonVariant: 'read',
   },
   {
-    id: 'office',
+    id: '5',
     imageSrc: '/Assets/office.png',
     imageAlt: 'Office Environment',
     headingSmall: 'Deployment-27 March 2025',
@@ -62,7 +62,7 @@ const OurBlogs= () => {
     buttonVariant: 'read',
   },
   {
-    id: 'chocolate',
+    id: '6',
     imageSrc: '/Assets/chocolate.png',
     imageAlt: 'Chocolate Drink',
     headingSmall: 'Sports-27 March 2025',
@@ -72,7 +72,7 @@ const OurBlogs= () => {
     buttonVariant: 'read',
   },
     {
-      id: 'beach',
+      id: '7',
       imageSrc: "/Assets/beach.png",
       imageAlt: "Scenic Beach",
       headingSmall: "Travel  14 March 2023",
@@ -82,7 +82,7 @@ const OurBlogs= () => {
       buttonVariant: "read",
     },
     {
-      id: 'tv',
+      id: '8',
       imageSrc: "/Assets/tv.png",
       imageAlt: "TV Show",
       headingSmall: "Deployment  23 March 2025",
@@ -92,7 +92,7 @@ const OurBlogs= () => {
       buttonVariant: "read",
     },
     {
-      id: 'football',
+      id: '9',
       imageSrc: "/Assets/football.png",
       imageAlt: "Football Game",
       headingSmall: "Sports  27 March 2025",

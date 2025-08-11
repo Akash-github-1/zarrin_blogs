@@ -24,7 +24,7 @@ const Cards = ({
       <div className="w-full h-90">
         <Image
           src={imageSrc}
-          onClick = {() =>  navigate("/blog/id")}
+          onClick = {() =>  navigate(`/blog/${id}`)}
           alt={imageAlt}
           className="w-full h-full object-cover rounded-t-lg"
         />

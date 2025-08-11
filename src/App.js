@@ -8,10 +8,12 @@ import Home from './Component/Pages/Home.jsx';
 import Footer from './Component/Main Component/Footer.jsx';
 import Usercomponent from './Component/Common/Usercontact.jsx'
 import Error from './Component/Main Component/Error.jsx';
-import Signup from './Component/Common/Signuppage.jsx';
+import Signup from './Component/Common/Signup.jsx';
 import SingleBlogPage from './Component/Main Component/SingleBlog.jsx'
 import Login from './Component/Common/Loginpage.jsx';
-import ProfileDashboard from './Component/Common/Profiledashborad.jsx';
+import Dashboard from './Component/Main Component/Dashboard.jsx';
+
+
 
 function App() {
   return (
@@ -24,17 +26,16 @@ function App() {
         <Route path="/blog/:id" element={<SingleBlogPage />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path='/Signup' element={<Signup/>}/>
+        <Route path='/login' element={<Login/>}/>
         <Route path="/*" element={<Error/>} />
+        <Route path='/dashboard' />
       </Routes>
       <Usercomponent/>
+      <Dashboard/>
       <Footer/>
     </BrowserRouter>
-      {/* <Signup/>
-        */}
-       {/* <Login/>  */}
-        {/* <ProfileDashboard/>  */}
-
-      </>
+     </>
   );
 }
 

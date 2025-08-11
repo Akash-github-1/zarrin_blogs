@@ -40,8 +40,8 @@ const ContactPage = () => {
             <div className="w-14 h-14 mx-auto bg-primary rounded-full flex items-center justify-center mb-4">
               {item.icon}
             </div>
-            <h3 className="text-lg font-semibold text-seconday mb-1">{item.title}</h3>
-            <p className="text-sm text-secondary">{item.detail}</p>
+            <Heading className="text-lg font-semibold text-seconday mb-1">{item.title}</Heading>
+            <Paragraph className="text-sm text-secondary">{item.detail}</Paragraph>
           </div>
         ))}
       </div>
