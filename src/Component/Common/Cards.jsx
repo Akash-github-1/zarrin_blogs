@@ -5,8 +5,10 @@ import Image from './Image';
 import Heading from './Heading';
 import Button from './Button';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 const Cards = ({
+  id ='',
   imageSrc = '/Assets/beach.png',
   imageAlt = 'Card Image',
   headingSmall = '',
@@ -15,11 +17,14 @@ const Cards = ({
   buttonText = '',
   buttonVariant = 'primary',
 }) => {
+
+  const navigate = useNavigate()
   return (
     <div className="w-full h-custom-lg bg-tertiary rounded-lg shadow-sm   mx-auto flex flex-col">
       <div className="w-full h-90">
         <Image
           src={imageSrc}
+          onClick = {() =>  navigate("/blog/id")}
           alt={imageAlt}
           className="w-full h-full object-cover rounded-t-lg"
         />
@@ -66,6 +71,7 @@ const Cards = ({
 };
 
 Cards.propTypes = {
+  id:PropTypes.string,
   imageSrc: PropTypes.string,
   imageAlt: PropTypes.string,
   headingSmall: PropTypes.string,

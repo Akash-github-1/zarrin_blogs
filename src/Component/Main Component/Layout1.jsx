@@ -65,7 +65,7 @@ const cardsData = [
 const BlogSection = () => {
   return (
     <div className='px-4 md:px-16 py-12'>
-      <div className="flex justify-between py-2">
+      <div className="flex justify-between px-6 py-2">
         <Heading type='h4' className='font-bold'>
           Popular Post
         </Heading>
@@ -76,7 +76,7 @@ const BlogSection = () => {
           className="mb-10 hover:bg-secondaryGray"
         />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 ">
         {cardsData.map((card, index) => (
           <Cards key={index} {...card} />
         ))}

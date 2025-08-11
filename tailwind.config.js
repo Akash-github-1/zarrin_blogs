@@ -39,6 +39,7 @@ module.exports = {
         'custom-lg':'610px',
         'custom-md':'530px',
         'custom-sm':'450px',
+        
       }
     },
   },

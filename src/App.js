@@ -8,6 +8,10 @@ import Home from './Component/Pages/Home.jsx';
 import Footer from './Component/Main Component/Footer.jsx';
 import Usercomponent from './Component/Common/Usercontact.jsx'
 import Error from './Component/Main Component/Error.jsx';
+import Signup from './Component/Common/Signuppage.jsx';
+import SingleBlogPage from './Component/Main Component/SingleBlog.jsx'
+import Login from './Component/Common/Loginpage.jsx';
+import ProfileDashboard from './Component/Common/Profiledashborad.jsx';
 
 function App() {
   return (
@@ -17,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<SingleBlogPage />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/*" element={<Error/>} />
@@ -24,9 +29,12 @@ function App() {
       <Usercomponent/>
       <Footer/>
     </BrowserRouter>
+      {/* <Signup/>
+        */}
+       {/* <Login/>  */}
+        {/* <ProfileDashboard/>  */}
 
-      
-    </>
+      </>
   );
 }
 

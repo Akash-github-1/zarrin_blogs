@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           <h1 className="text-2xl font-bold text-black">Zarrin</h1>
           </div>
-          <nav className="space-x-6 text-sm font-font1 text-secoinadry-700">
+          <nav className="space-x-6 text-sm font-font1 text-secondary">
           <NavLink to="/" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-dark"}>Home</NavLink>
           
           <NavLink to="/Blog" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-dark"}>Blog</NavLink>
