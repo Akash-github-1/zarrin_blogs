@@ -4,7 +4,9 @@ import { Edit, Grid, User } from "lucide-react";
 import Headings from "../Common/Heading";
 import Paragraph from "../Common/Paragraph";
 import Button from "../Common/Button";
-import { Link } from "react-router-dom";  
+
+ 
+
 
 
 
@@ -14,15 +16,8 @@ export default function Dashboard() {
   return (
     <div className="flex min-h-screen ">
       
-      <aside className="w-64  bg-primary text-tertiary flex flex-col p-6">
-        <Headings type="h4" className=" font-bold mb-10">Zarrin</Headings>
-        <nav className="space-y-4">
-          {["Dashboard", "Posts", "Categories", ].map((item) => (
-          <Link to={`/Dashboard/${item}`} className={`block font-medium hover:text-secondary ${item === "Dashboard" }`}>{item}</Link>
-          ))}
-        </nav>
-      </aside>
-
+      
+      
       
       <main className="flex-1 p-8">
         <Headings type="h4" className="text-2xl font-semibold">Dashboard</Headings>

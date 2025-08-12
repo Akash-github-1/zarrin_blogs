@@ -1,5 +1,6 @@
 import React from 'react'
-import AboutUS from '../Main Component/AboutUS'
+import AboutUS from '../Component/Main Component/AboutUS'
+
 
 
 const About = () => {

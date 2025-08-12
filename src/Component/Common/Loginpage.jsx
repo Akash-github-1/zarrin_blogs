@@ -1,17 +1,16 @@
 
-import React, { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { FaApple } from 'react-icons/fa';
 import Paragraph from './Paragraph';
 import Headings from './Heading';
 import Button from './Button';
-import { Eye, EyeOff } from "lucide-react";
+
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
 
 
 const Login = () => {
-  const [showPassword, setShowPassword] = useState(false); 
+  
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-tertiary px-4 font-font2">
@@ -63,19 +62,14 @@ const Login = () => {
               </label>
               <div className="relative">
                 <input
-                  type={showPassword ? "text" : "password"} 
+                  type= "password"
                   id="password"
                   name="password"
                   autoComplete="current-password"
                   required
                   className="mt-1 w-full px-4 py-2 border border-secondaryGray rounded-md shadow-sm focus:ring-primary focus:border-primary"
                 />
-                <span
-                  className="absolute inset-y-0 right-3 flex items-center text-secondaryGray cursor-pointer"
-                  onClick={() => setShowPassword(!showPassword)}
-                >
-                  {showPassword ? <Eye size={24} /> : <EyeOff size={24} />} 
-                </span>
+              
               </div>
             </div>
 
