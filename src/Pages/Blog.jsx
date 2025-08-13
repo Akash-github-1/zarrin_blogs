@@ -1,5 +1,5 @@
 import React from 'react'
-import OurBlogs from '../Main Component/OurBlogs'
+import OurBlogs from '../Component/Main Component/OurBlogs'
 
 
 

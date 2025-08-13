@@ -1,20 +1,28 @@
-import React from 'react'
-import Headings from '../Common/Heading'
-import Paragraph from '../Common/Paragraph'
-import Cards from '../Common/Cards'
 
-const OurBlogs = () => {
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Headings from '../Common/Heading';
+import Paragraph from '../Common/Paragraph';
+import Cards from '../Common/Cards';
+
+
+const OurBlogs= () => {
+  const navigate = useNavigate();
+
   const CardsData = [
     {
-    imageSrc: '/Assets/train.png',
-    imageAlt: 'Train Journey',
-    headingSmall: 'Travel-14 March 2023',
-    headingLarge: 'Train Or Bus Journey? Which one suits?',
-    paragraph: 'The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person.',
-    buttonText: 'Read More..',
-    buttonVariant: 'read',
-  },
-  {
+      id: '1',
+      imageSrc: '/Assets/train.png',
+      imageAlt: 'Train Journey',
+      headingSmall: 'Travel-14 March 2023',
+      headingLarge: 'Train Or Bus Journey? Which one suits?',
+      paragraph:
+        'The choice between a train or bus journey depends on various factors such as the distance of the journey, the time available, the cost, and person.',
+      buttonText: 'Read More..',
+      buttonVariant: 'read',
+    },
+      {
+    id: '2',
     imageSrc: '/Assets/laptop.png',
     imageAlt: 'Laptop Workspace',
     headingSmall: 'Deployment-23 March 2025',
@@ -24,6 +32,7 @@ const OurBlogs = () => {
     buttonVariant: 'read',
   },
   {
+    id: '3',
     imageSrc: '/Assets/sport.png',
     imageAlt: 'Sport and Dance',
     headingSmall: 'Sports 27 March 2025',
@@ -33,6 +42,7 @@ const OurBlogs = () => {
     buttonVariant: 'read',
   },
   {
+    id: '4',
     imageSrc: '/Assets/singer.png',
     imageAlt: 'Singer Performance',
     headingSmall: 'Travel-27 March 2025',
@@ -42,6 +52,7 @@ const OurBlogs = () => {
     buttonVariant: 'read',
   },
   {
+    id: '5',
     imageSrc: '/Assets/office.png',
     imageAlt: 'Office Environment',
     headingSmall: 'Deployment-27 March 2025',
@@ -51,6 +62,7 @@ const OurBlogs = () => {
     buttonVariant: 'read',
   },
   {
+    id: '6',
     imageSrc: '/Assets/chocolate.png',
     imageAlt: 'Chocolate Drink',
     headingSmall: 'Sports-27 March 2025',
@@ -60,6 +72,7 @@ const OurBlogs = () => {
     buttonVariant: 'read',
   },
     {
+      id: '7',
       imageSrc: "/Assets/beach.png",
       imageAlt: "Scenic Beach",
       headingSmall: "Travel  14 March 2023",
@@ -69,6 +82,7 @@ const OurBlogs = () => {
       buttonVariant: "read",
     },
     {
+      id: '8',
       imageSrc: "/Assets/tv.png",
       imageAlt: "TV Show",
       headingSmall: "Deployment  23 March 2025",
@@ -78,6 +92,7 @@ const OurBlogs = () => {
       buttonVariant: "read",
     },
     {
+      id: '9',
       imageSrc: "/Assets/football.png",
       imageAlt: "Football Game",
       headingSmall: "Sports  27 March 2025",
@@ -86,28 +101,38 @@ const OurBlogs = () => {
       buttonText: "Read More..",
       buttonVariant: "read",
     },
+  
   ];
 
   return (
-    <div className='px-4 md:px-16 py-12'>
-      <div className='bg-tertiary justify-center'>
-        <div className='py-4'>
-          <Headings type='h6' className='text-center opacity-65'>OUR BLOGS</Headings>
-          <Headings type='h2' className='text-center py-4'>Find our all blogs from here</Headings>
-          <div className='flex justify-center'>
-            <Paragraph variant='small' className='text-center py-4 opacity-65 max-w-xl'>
+    <div className="px-4 md:px-16 py-12">
+      <div className="bg-tertiary justify-center">
+        <div className="py-4">
+          <Headings type="h6" className="text-center opacity-65">
+            OUR BLOGS
+          </Headings>
+          <Headings type="h2" className="text-center py-4">
+            Find our all blogs from here
+          </Headings>
+          <div className="flex justify-center">
+            <Paragraph variant="small" className="text-center py-4 opacity-65 max-w-xl">
               our blogs are written from very research research and well known writers writers so that we can provide you the best blogs and articles articles for you to read them all along
             </Paragraph>
           </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-10">
-            {CardsData.map((card, index) => (
-              <Cards key={index} {...card} />
+            {CardsData.map((card, id) => (
+              <Cards
+                key={id}
+                {...card}
+               
+              />
             ))}
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default OurBlogs;
