@@ -33,6 +33,10 @@ const Navbar = () => {
           <NavLink to="/Blog" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-dark"}>Blog</NavLink>
           <NavLink to="/About" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-dark"}>About</NavLink>
 
+
+         
+          <NavLink to="/Contact" className={({ isActive }) => isActive ? "text-primary font-bold" : "text-dark"}>Contact Us</NavLink>
+          
           <div className="relative flex items-center gap-2">
             <Search
               className="w-5 h-5 text-dark cursor-pointer hover:text-primary"
@@ -47,14 +51,14 @@ const Navbar = () => {
               />
             )}
           </div>
-
-          <NavLink to="/Contact">
+          <NavLink to="/login">
             <Button
-              text="Contact Us"
+              text="Login"
               variant="primary"
               className="px-6 py-2 rounded-md text-sm font-medium hover:bg-primary transition"
             />
           </NavLink>
+          
         </div>
 
         <div className="md:hidden z-50">
