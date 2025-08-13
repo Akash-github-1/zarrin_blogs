@@ -5,6 +5,8 @@ import "react-quill-new/dist/quill.snow.css";
 import Headings from "../Common/Heading";
 import Paragraph from "../Common/Paragraph";
 import Button from "../Common/Button";
+import Image from "../Common/Image";
+import { X } from "lucide-react"; 
 
 const BlogForm = () => {
   const [title, setTitle] = useState("");
@@ -51,7 +53,6 @@ const BlogForm = () => {
     };
     console.log("Form submitted:", formData);
     alert("Blog submitted successfully!");
-  
   };
 
   return (
@@ -119,7 +120,7 @@ const BlogForm = () => {
                   key={index}
                   className="relative border rounded-lg overflow-hidden"
                 >
-                  <img
+                  <Image
                     src={img.preview}
                     alt={`Preview ${index}`}
                     className="w-full h-40 object-cover"
@@ -128,16 +129,15 @@ const BlogForm = () => {
                     variant="dark"
                     onClick={() => handleDeleteImage(index)}
                     type="button"
-                    className="absolute top-1 right-1 text-xs px-2 py-1 rounded"
+                    className="absolute top-1 right-1 text-xs px-2 py-1 rounded flex items-center justify-center"
                   >
-                    X
+                    <X size={14} /> 
                   </Button>
                 </div>
               ))}
             </div>
           )}
 
-         
           <label className="block mb-2 font-semibold">Short Description</label>
           <textarea
             placeholder="Write a short description..."
@@ -156,7 +156,6 @@ const BlogForm = () => {
             className="mb-6 w-full"
           />
 
-          
           <div className="flex justify-between">
             <Button
               variant="primary"
@@ -173,7 +172,6 @@ const BlogForm = () => {
             >
               Preview
             </Button>
-            
           </div>
         </form>
       ) : (
@@ -188,12 +186,11 @@ const BlogForm = () => {
           {images.length > 0 && (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
               {images.map((img, index) => (
-                <img
-                  key={index}
-                  src={img.preview}
-                  alt={`Preview ${index}`}
-                  className="w-full h-40 object-cover rounded-lg"
-                />
+                 <Image 
+                    src={Image.preview}
+                    alt={`Preview ${index}`}
+                    className="w-full h-40 object-cover"
+                  />
               ))}
             </div>
           )}
@@ -218,8 +215,3 @@ const BlogForm = () => {
 };
 
 export default BlogForm;
-
-
-
-
-

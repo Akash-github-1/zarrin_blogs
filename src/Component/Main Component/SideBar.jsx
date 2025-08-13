@@ -17,7 +17,7 @@ const SideBar = () => {
   ];
 
   return (
-    <div className="flex">
+    <div className="flex h-screen">
       
       <Button
         className="lg:hidden p-4 text-primary"

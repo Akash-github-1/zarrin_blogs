@@ -20,7 +20,7 @@ const MyBlogs = () => {
   };
 
   return (
-    <div className="w-[95%] mx-auto">
+    <div className="w-screen mx-auto">
      
       <div className="flex justify-end p-4">
         <Link to={'/dashboard/posts'}><Button variant="primary" text="Create Blogs" /></Link>

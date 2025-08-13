@@ -67,7 +67,7 @@ const Categories = () => {
               </Button>
               <Button
                 onClick={addCategory}
-                className="px-4 py-2 bg-green-500 text-tertiary rounded-lg hover:bg-green-600"
+                className="px-4 py-2 bg-primary text-tertiary rounded-lg hover:bg-secondary"
               >
                 Save Category
               </Button>
@@ -91,10 +91,10 @@ const Categories = () => {
 
                 <Button
                   onClick={() => deleteCategory(cat.id)}
-                  className="p-2 bg-red-100 hover:bg-red-200 rounded"
+                  className="p-2 bg-tertiary hover:bg-secondaryGray rounded"
                   title="Delete"
                 >
-                  <Trash className="w-5 h-5 text-red-600" />
+                  <Trash className="w-5 h-5 text-primary" />
                 </Button>
               </div>
             ))

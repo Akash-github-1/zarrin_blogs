@@ -14,7 +14,7 @@ export default function AuthenticatedLayout() {
 
   return (
     <div className="flex">
-       <SideBar/> 
+       <div><SideBar/> </div>
       <Outlet />
     </div>
   );

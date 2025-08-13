@@ -110,8 +110,7 @@ const BlogSection = () => {
             </div>
 
     </div>
-        <div className=''>
-        </div>
+        
         </div>
           <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 px-6'>
             {cardsData.map((card, index) => (
