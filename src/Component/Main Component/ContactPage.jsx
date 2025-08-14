@@ -9,7 +9,7 @@ const ContactPage = () => {
     {
       icon: <MdLocationOn className="text-tertiary text-3xl" />,
       title: 'Office',
-      detail: 'Gomtuinagr,Lucknow , India',
+      detail: 'GomtiNagar,Lucknow , India',
     },
     {
       icon: <MdEmail className="text-tertiary text-3xl" />,
