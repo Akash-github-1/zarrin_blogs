@@ -13,7 +13,7 @@ const SideBar = () => {
     
     { label: "My Blogs", route: "myblogs" },
     { label: "Categories", route: "categories" },
-    { label: "Logout", route: "logout" },
+    { label: "Logout" },
   ];
 
   return (
@@ -52,7 +52,7 @@ const SideBar = () => {
      
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black opacity-50 lg:hidden"
+          className="fixed inset-0 bg-dark opacity-50 lg:hidden"
           onClick={() => setIsOpen(false)}
         ></div>
       )}
