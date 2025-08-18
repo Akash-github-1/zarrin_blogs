@@ -47,7 +47,31 @@ const ContactPage = () => {
       </div>
       <div className="relative">
   <div>
-    <Image src={'./Assets/map.png'} className="w-full h-custom-md object-cover" />
+
+    <div className="relative">
+  <div>
+ 
+    <iframe
+      title="Google Map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.1380000000003!2d80.98700000000001!3d26.850000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be2d5e12a3f%3A0x0!2sGomti%20Nagar%2C%20Lucknow%2C%20India!5e0!3m2!1sen!2sin!4v1691563123456!5m2!1sen!2sin"
+      width="100%"
+      height="450"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      className="w-full h-custom-md rounded-lg"
+    ></iframe>
+  </div>
+
+
+  <div className="relative z-20 -mt-24">
+    <div className="max-w-2xl mx-auto bg-tertiary p-8 rounded-lg shadow-md border border-primary">
+     
+    </div>
+  </div>
+</div>
+
   </div>
 
   <div className="relative z-20 -mt-24">

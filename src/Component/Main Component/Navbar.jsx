@@ -47,7 +47,7 @@ const Navbar = () => {
                 ref={searchInputRef}
                 type="text"
                 placeholder="Search..."
-                className="border border-sec rounded-md px-3 py-1 text-sm outline-none transition w-40"
+                className="border border-secondary rounded-md px-3 py-1 text-sm outline-none transition w-40"
               />
             )}
           </div>
@@ -94,7 +94,7 @@ const Navbar = () => {
                 ref={searchInputRef}
                 type="text"
                 placeholder="Search..."
-                className="border border-gray-300 rounded-md px-3 py-1 text-sm outline-none w-full"
+                className="border border-secondary rounded-md px-3 py-1 text-sm outline-none w-full"
               />
             )}
           </div>
