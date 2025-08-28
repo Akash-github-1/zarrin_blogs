@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { FcGoogle } from 'react-icons/fc';
-import { FaApple } from 'react-icons/fa';
+
 import Paragraph from './Paragraph';
 import Button from './Button';
 import Headings from './Heading';
@@ -59,29 +58,15 @@ const Signup = () => {
             />
             <Paragraph className="text-xs text-secondary mt-1">Must be at least 8 characters.</Paragraph >
           </div>
-
-         
+           <div>
+            <Button 
+              text="Sign up" 
+              variant="primary" 
+              className="w-full font-semibold"
+            />
+          </div>
         </form>
 
-        <div className="my-6 text-center text-secondary text-sm">or continue with</div>
-
- <div className="flex space-x-4 justify-center">
-       <Button 
-       text="Google" 
-       variant="outline" 
-       className="flex items-center gap-2">
-       <FcGoogle className="text-xl" />
-       </Button>
-
-       <Button 
-       text="Apple" 
-       variant="outline" 
-       className="flex items-center gap-2">
-       <FaApple className="text-xl" />
-       </Button>
-       </div>
-
-       
         <Paragraph className="mt-6 text-sm text-center text-secondary">
           Already have an account?{' '}
          
