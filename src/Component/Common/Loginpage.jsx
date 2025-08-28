@@ -1,6 +1,4 @@
 
-import { FcGoogle } from 'react-icons/fc';
-import { FaApple } from 'react-icons/fa';
 import Paragraph from './Paragraph';
 import Headings from './Heading';
 import Button from './Button';
@@ -94,19 +92,6 @@ const Login = () => {
             />
           </div>
         </form>
-
-       
-        <div className="flex items-center justify-center space-x-2">
-          <span className="text-secondaryGray text-sm">Or Login With</span>
-        </div>
-        <div className="flex space-x-4 justify-center">
-          <Button text="Google" variant="outline" className="flex items-center gap-2">
-            <FcGoogle className="text-xl" />
-          </Button>
-          <Button text="Apple" variant="outline" className="flex items-center gap-2">
-            <FaApple className="text-xl" />
-          </Button>
-        </div>
 
         
         <Paragraph className="text-center text-sm text-secondary">
