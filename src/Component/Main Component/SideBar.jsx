@@ -13,11 +13,11 @@ const SideBar = () => {
     
     { label: "My Blogs", route: "myblogs" },
     { label: "Categories", route: "categories" },
-    { label: "Logout", route: "logout" },
+   
   ];
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen ">
       
       <Button
         className="lg:hidden p-4 text-primary"
@@ -28,14 +28,14 @@ const SideBar = () => {
 
       
       <aside
-        className={`bg-primary text-tertiary flex flex-col p-6 fixed lg:static top-0 left-0 h-full z-50 transform transition-transform duration-300
+        className={`bg-primary text-tertiary flex flex-col p-6 fixed lg:static top-0 left-0 h-full z-50 transform transition-transform duration-300 
         ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 lg:w-64`}
       >
         <Headings type="h4" className="font-bold mb-10">
           Zarrin
         </Headings>
 
-        <nav className="space-y-4">
+        <nav className="space-y-4 ">
           {menuItems.map((item) => (
             <Link
               key={item.route}
@@ -45,14 +45,17 @@ const SideBar = () => {
             >
               {item.label}
             </Link>
-          ))}
+   
+  ))}
         </nav>
+     <div className="mt-80" >
+     <Button variant={'parimary'} >Logout</Button></div>
       </aside>
 
      
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black opacity-50 lg:hidden"
+          className="fixed inset-0 bg-dark opacity-50 lg:hidden"
           onClick={() => setIsOpen(false)}
         ></div>
       )}
