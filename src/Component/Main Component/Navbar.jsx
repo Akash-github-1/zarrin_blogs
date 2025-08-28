@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import Image from '../Common/Image';
+
 import Heading from '../Common/Heading';
 import { Search, Menu, X } from 'lucide-react';
 import Button from '../Common/Button';
@@ -47,7 +47,7 @@ const Navbar = () => {
                 ref={searchInputRef}
                 type="text"
                 placeholder="Search..."
-                className="border border-gray-300 rounded-md px-3 py-1 text-sm outline-none transition w-40"
+                className="border border-secondary rounded-md px-3 py-1 text-sm outline-none transition w-40"
               />
             )}
           </div>
@@ -94,7 +94,7 @@ const Navbar = () => {
                 ref={searchInputRef}
                 type="text"
                 placeholder="Search..."
-                className="border border-gray-300 rounded-md px-3 py-1 text-sm outline-none w-full"
+                className="border border-secondary rounded-md px-3 py-1 text-sm outline-none w-full"
               />
             )}
           </div>
@@ -110,7 +110,7 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-30 z-30 md:hidden"
+          className="fixed inset-0 bg-dark bg-opacity-30 z-30 md:hidden"
           onClick={() => setIsOpen(false)}
         ></div>
       )}
